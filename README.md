@@ -17,7 +17,7 @@ GreenDen is a web application designed to promote environmental awareness and su
 **Tailwind:** 
 
 ## How to View
-You can access my Greenden-Tailwind website by visiting [Link] Feel free to explore the content.
+You can access my Greenden-Tailwind website by visiting [https://gokulakrishnan0610.github.io/Greenden-Tailwind/] Feel free to explore the content.
 
 ## Contributing
 Contributions are welcome! Feel free to open an issue or submit a pull request if you have any improvements or new features you'd like to add.
