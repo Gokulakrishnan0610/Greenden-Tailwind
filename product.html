@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greenden</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <body>
 
     <nav class="bg-green-100 p-2 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="size-6 h-6 md:hidden ">
+        <svg id="menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6 h-6 md:hidden ">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
@@ -29,10 +31,30 @@
         </ul>
     </nav>
 
+
+    <section id="side__nav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000 "
+        style="width: 50%; height: 100vh; left: -50%;">
+        <div class="text-right p-5">
+            <p id="close" class="inline cursor-pointer">x</p>
+        </div>
+        <ul class="flex flex-col gap-10 text-gray-600 text-center pt-4 ">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Product</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
+
     <section class="p-5 text-center">
         <h2 class="text-3xl font-bold mt-5">Our Products</h2>
-        <input type="text" placeholder="Search for Product..." class="border border-black mt-5 mb-3 p-2 container md:w-3/4">
-        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+        <input id="Search" type="text" placeholder="Search for Product..."
+            class="border border-black mt-5 mb-3 p-2 container md:w-3/4">
+        <div id="Products" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
             <div>
                 <img src="./images/pot_1.png" class="inline hover:shadow-xl transform hover:-translate-y-2 w-52 h-64">
                 <h6>Rose Plant</h6>
@@ -40,17 +62,17 @@
             </div>
             <div>
                 <img src="./images/pot_2.png" class="inline hover:shadow-xl transform hover:-translate-y-2 w-52 h-64">
-                <h6>Lilac Plant</h6>
+                <h6>Lilac</h6>
                 <p>$30</p>
             </div>
             <div>
                 <img src="./images/pot_3.png" class="inline hover:shadow-xl transform hover:-translate-y-2 w-52 h-64">
-                <h6>White Rose Plant</h6>
+                <h6>White Rose</h6>
                 <p>$20</p>
             </div>
             <div>
                 <img src="./images/pot_4.png" class="inline hover:shadow-xl transform hover:-translate-y-2 w-52 h-64">
-                <h6>Sun Flower plant</h6>
+                <h6>Sun Flower</h6>
                 <p>$20</p>
             </div>
 
@@ -61,17 +83,18 @@
             </div>
             <div>
                 <img src="./images/pot.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 w-52 h-64">
-                <h6>Petunia Plant</h6>
+                <h6>Petunia</h6>
                 <p>$20</p>
             </div>
             <div>
-                <img src="./images/White Daisy.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 w-52 h-64">
-                <h6>White Daisy Plant</h6>
+                <img src="./images/White Daisy.jpg"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 w-52 h-64">
+                <h6>White Daisy</h6>
                 <p>$20</p>
             </div>
             <div>
                 <img src="./images/zinnia.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 w-52 h-64">
-                <h6>Zinnia Plant</h6>
+                <h6>Zinnia</h6>
                 <p>$20</p>
             </div>
         </div>
@@ -79,10 +102,14 @@
 
     <section class="bg-green-100 mt-5 p-10 ">
         <h2 class="text-3xl font-bold mt-5">Greenden</h2>
-        <p class="mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa nobis eveniet est? Sapiente voluptates,
+        <p class="mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa nobis eveniet est? Sapiente
+            voluptates,
             doloremque earum laborum eaque quae deleniti.</p>
-            <p class="mt-3" >@ 2024 Greenden.com</p>
+        <p class="mt-3">@ 2024 Greenden.com</p>
     </section>
-    
+
+    <script src="product.js"></script>
+
 </body>
+
 </html>
